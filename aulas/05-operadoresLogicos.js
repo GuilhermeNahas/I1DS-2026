@@ -20,3 +20,11 @@ console.log("Manhã:", manha, "| Estou com sono?", sono);
 //Operador E AND e OR
 console.log("Operador AND (E):", manha && sono);
 console.log("Operador OR (OU):", manha || sono);
+
+sono = false
+console.log("-----------------------------------------");
+console.log("Manhã:", manha, "| Estou com sono?", sono);
+
+//Operador E AND e OR
+console.log("Operador AND (E):", manha && sono);
+console.log("Operador OR (OU):", manha || sono);
