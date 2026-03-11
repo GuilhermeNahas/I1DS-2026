@@ -13,7 +13,7 @@ console.log("Manhã:", manha, "| Estou com sono?", sono);
 console.log("Operador AND (E):", manha && sono);
 console.log("Operador OR (OU):", manha || sono);
 
-manha = false
+manha = false;
 console.log("-----------------------------------------");
 console.log("Manhã:", manha, "| Estou com sono?", sono);
 
@@ -21,7 +21,7 @@ console.log("Manhã:", manha, "| Estou com sono?", sono);
 console.log("Operador AND (E):", manha && sono);
 console.log("Operador OR (OU):", manha || sono);
 
-sono = false
+sono = false;
 console.log("-----------------------------------------");
 console.log("Manhã:", manha, "| Estou com sono?", sono);
 
