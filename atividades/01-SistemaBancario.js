@@ -32,13 +32,14 @@ console.log("Novo saldo é de R$", saldo);
 console.log("Pix enviado: R$120");
 saldo = saldo - 120;
 console.log("Novo saldo é de R$:", saldo);
-console.log("Pix recebido de Diogo Biazotto: R$20000");
+console.log("Pix recebido de Cristiano: R$20000");
 saldo += 20000;
 console.log("Novo saldo é de R$: ", saldo);
-console.log("Pix enviado para Marcio Lamano: R$10000");
+console.log("Pix enviado para Marcio: R$10000");
 saldo -= 10000;
 console.log("Seu saldo é de: ", saldo);
 
+//Imprimindo os dados e saldo bancário
 console.log("***********", banco, "*************");
 console.log("Cliente:", nome);
 console.log("Agência:", agencia, "| Conta: ", conta);
