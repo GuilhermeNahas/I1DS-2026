@@ -54,3 +54,4 @@ console.log("Soma : v1 + v2", v1 + v2);
 console.log("subtração: v1 - v2 =", v1 - v2);
 console.log("Multiplicação: v1 * v2 =", v1 * v2);
 console.log("Divisão: v1  / v2 =", v1 / v2);
+
