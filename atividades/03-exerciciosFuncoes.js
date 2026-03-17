@@ -17,6 +17,7 @@ function obterIdade(anoNascimento) {
 console.log(obterIdade(2009));
 console.log(obterIdade(1800));
 
+// ao adicionar uma variavel ou valor dentro de ${} ele é concatenado, como abaixo, o parametro combustivel recebe um valor, que é exibido dentro do texto, independente do valor.
 function quantidadeCombustivel(combustivel) {
   return `com ${combustivel}L de combustivel, o carro pode percorrer ${combustivel * 12}km`;
 }
