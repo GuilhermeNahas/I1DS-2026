@@ -7,7 +7,6 @@
     e se o voto é obrigatório ou opcional.
 */
 
-
 function podeVotar(idade) {
   let frase;
   if (idade < 16) {
@@ -27,5 +26,3 @@ idade = 12;
 console.log("Idade:", idade, "-", podeVotar(idade));
 idade = 57;
 console.log("Idade:", idade, "-", podeVotar(idade));
-
-
