@@ -25,3 +25,11 @@ switch (menuSelecionado) {
         console.log("Você acabou de me pagar um cafe!")
         break;
 }
+
+
+//To fixed é utilizado para falar para o codigo quantos numeros decimais seu numero ira ter 
+//POR EXEMPLO:
+const pi = 3.1415683
+
+console.log(pi)
+console.log(pi.toFixed(2))
