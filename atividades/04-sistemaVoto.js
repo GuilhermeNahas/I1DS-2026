@@ -20,9 +20,3 @@ function podeVotar(idade) {
 }
 let idade = 23;
 console.log("Idade:", idade, "-", podeVotar(idade));
-idade = 25;
-console.log("Idade:", idade, "-", podeVotar(idade));
-idade = 12;
-console.log("Idade:", idade, "-", podeVotar(idade));
-idade = 57;
-console.log("Idade:", idade, "-", podeVotar(idade));
