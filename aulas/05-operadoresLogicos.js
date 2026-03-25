@@ -2,7 +2,7 @@
 let souPobre = true;
 
 console.log("Sou pobre?", souPobre);
-console.log("Negação de souPobre:", !souPobre);
+console.log("Negação de souPobre:", !souPobre);// !souPobre por exemplo nega o que vem na frente de !
 
 let manha = true;
 let sono = true;
