@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML | Aula 03</title>
+    <style>
+        .my-text {
+            color: white
+        }
+
+        #header {
+            background-color: red;
+            height: 130px;
+            text-align: center;
+        }
+
+        #main {
+            background-color: #de35b7;
+            height: 350px;
+        }
+
+        #aside {
+            background-color: blue;
+            height: 100%;
+            width: 30%;
+            float: left
+        }
+
+        #content {
+            background-color: green;
+            height: 100%;
+            width: 60%;
+            float: right
+        }
+
+        #footer {
+            background-color: gray;
+            height: 30px
+        }
+    </style>
+
+    <head>
+
+    <body>
+        <div id="header" style="background-color: red; height: 130px">
+            <!-- DIV: Divisão de conteúdo (Vermelho) -->
+            <h1 class="my-text">Conteúdo do cabeçalho</h1>
+        </div>
+
+        <div id="main" style="background-color: #de35b7; height: 350px">
+            <!-- DIV: Divisão de conteúdo (Rosa) -->
+            <div id="aside" style="background-color: blue; height: 100%; width: 30%; float: left">
+                <!-- DIV: Divisão de conteúdo (Azul) -->
+                <h2 class="my-text">Conteúdo Barra Lateral</h2>
+            </div>
+            <div id="content" style="background-color: green; height: 100%; width: 60%; float: right">
+                <!-- DIV: Divisão de conteúdo (Verde) -->
+                <h2 class="my-text">Conteúdo Principal</h2>
+            </div>
+        </div>
+
+        <div id="footer" style="background-color: gray; height: 30px">
+            <!-- DIV: Divisão de conteúdo (Cinza) -->
+            <h2 class="my-text">Conteúdo do rodapé</h2>
+        </div>
+    </body>
+
+</html>
+
+<!--Explicação linha 7:
+ todos os textos com .my-text fica o texto na cor citada-->
+
+<!-- Linha 11 Explicação
+ ao usar # e o nome dado voce pode mudar letra e altura OBS:isso no começo do código apenas quando for utilizado ID para dar nome quando usar-->
+<!--quando usar o # e o comando voce pode apagar o que estiver na frente da DIV, pois ja foi orientado o programa sobre oque fazer -->
