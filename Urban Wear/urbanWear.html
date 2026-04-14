@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Wear Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">URBAN WEAR STORE</div>
+    <nav class="main-nav">
+      <a href="#home">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#signup">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-card">
+        <div class="hero-visual">
+          <div class="hero-sticker">Urban Wear Store</div>
+          <img src="https://raw.githubusercontent.com/GuilhermeNahas/I1DS-2026/refs/heads/main/image%201.png"
+            alt="Modelo Urban Wear">
+        </div>
+
+        <div class="hero-form">
+          <span class="eyebrow">BEM-VINDO</span>
+          <h1>Entre no estilo urbano com a nossa loja.</h1>
+          <p>Faça login para acessar o catálogo e encontrar os melhores looks.</p>
+
+          <form action="#" class="login-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="seunome">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="**************">
+
+            <button type="submit" class="primary-button">ENTRAR</button>
+          </form>
+
+          <div class="social-buttons">
+            <button class="secondary-button google">Login com Google</button>
+            <button class="secondary-button apple">Login com Apple</button>
+          </div>
+
+          <p class="signup-note">Não tem conta? <a href="#signup">Cadastre-se aqui</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections" id="catalogo">
+      <div class="section-header">
+        <h2>Escolha seu estilo</h2>
+        <p>Moda feminina e masculina com atitude urbana.</p>
+      </div>
+
+      <div class="collection-grid">
+        <article class="collection-card">
+          <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=800&q=80"
+            alt="Moda feminina">
+          <div>
+            <strong>Feminina</strong>
+            <p>Descubra looks elegantes e confortáveis para todos os dias.</p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd95?auto=format&fit=crop&w=800&q=80"
+            alt="Moda masculina">
+          <div>
+            <strong>Masculina</strong>
+            <p>Estilo urbano moderno com peças selecionadas para você.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="section-header">
+        <h2>Catálogo em destaque</h2>
+        <p>As peças mais desejadas da nova coleção.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80"
+            alt="Tênis branco">
+          <h3>Tênis urbano</h3>
+          <p>Conforto e estilo para completar o look.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80"
+            alt="Camiseta branca">
+          <h3>Camiseta básica</h3>
+          <p>Peça essencial com design minimalista.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80"
+            alt="Moletom preto">
+          <h3>Moletom preto</h3>
+          <p>Visual urbano e aconchegante para dias frios.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=700&q=80"
+            alt="Shorts estampados">
+          <h3>Shorts esportivo</h3>
+          <p>Peça leve para looks casuais e descontraídos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="signup" id="signup">
+      <div class="signup-card">
+        <div class="signup-info">
+          <span>NOVO MEMBRO</span>
+          <h2>Cadastre-se e receba novidades exclusivas.</h2>
+          <p>Entre para a comunidade Urban Wear e fique por dentro das melhores ofertas.</p>
+        </div>
+
+        <form action="#" class="signup-form">
+          <label for="new-email">Email</label>
+          <input type="email" id="new-email" name="new-email" placeholder="seuemail@email.com">
+
+          <label for="new-password">Senha</label>
+          <input type="password" id="new-password" name="new-password" placeholder="**************">
+
+          <button type="submit" class="primary-button">Sign up</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Urban Wear Store © 2026 - Protótipo recriado com HTML e CSS.
+  </footer>
+</body>
+
+</html>
