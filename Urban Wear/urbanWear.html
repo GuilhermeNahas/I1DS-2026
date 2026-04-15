@@ -28,9 +28,9 @@
             alt="Modelo Urban Wear">
         </div>
 
-        <div class="hero-form">
+        <div class="login-section">
           <span class="eyebrow">BEM-VINDO</span>
-          <h1>Entre no estilo urbano com a nossa loja.</h1>
+          <h2>Entre no estilo urbano com a nossa loja.</h2>
           <p>Faça login para acessar o catálogo e encontrar os melhores looks.</p>
 
           <form action="#" class="login-form">
@@ -40,20 +40,34 @@
             <label for="password">Senha</label>
             <input type="password" id="password" name="password" placeholder="**************">
 
-            <button type="submit" class="primary-button">ENTRAR</button>
+            <button type="submit" class="primary-button login-btn">ENTRAR</button>
           </form>
 
           <div class="social-buttons">
             <button class="secondary-button google">Login com Google</button>
             <button class="secondary-button apple">Login com Apple</button>
           </div>
+        </div>
 
-          <p class="signup-note">Não tem conta? <a href="#signup">Cadastre-se aqui</a></p>
+        <div class="signup-section">
+          <span class="eyebrow">NOVO MEMBRO</span>
+          <h2>Cadastre-se e receba novidades exclusivas.</h2>
+          <p>Entre para a comunidade Urban Wear e fique por dentro das melhores ofertas.</p>
+
+          <form action="#" class="signup-form">
+            <label for="new-email">Email</label>
+            <input type="email" id="new-email" name="new-email" placeholder="seuemail@email.com">
+
+            <label for="new-password">Senha</label>
+            <input type="password" id="new-password" name="new-password" placeholder="**************">
+
+            <button type="submit" class="primary-button signup-btn">CADASTRAR-SE</button>
+          </form>
         </div>
       </div>
     </section>
 
-    <section class="collections" id="catalogo">
+    <section class="collections" id="catalogo" style="display: none;">
       <div class="section-header">
         <h2>Escolha seu estilo</h2>
         <p>Moda feminina e masculina com atitude urbana.</p>
@@ -82,7 +96,7 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" style="display: none;">
       <div class="section-header">
         <h2>Catálogo em destaque</h2>
         <p>As peças mais desejadas da nova coleção.</p>
@@ -119,7 +133,7 @@
       </div>
     </section>
 
-    <section class="signup" id="signup">
+    <section class="signup" id="signup" style="display: none;">
       <div class="signup-card">
         <div class="signup-info">
           <span>NOVO MEMBRO</span>
@@ -139,6 +153,7 @@
       </div>
     </section>
   </main>
+  <script src="urbanWear.js"></script>
 </body>
 
 </html>

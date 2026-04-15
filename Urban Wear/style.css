@@ -50,16 +50,14 @@ main {
 
 .hero-card {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.2fr 1fr 1fr;
   gap: 32px;
   align-items: center;
 }
 
 .hero-visual,
-.hero-form,
-.collection-card,
-.product-card,
-.signup-card {
+.login-section,
+.signup-section {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
@@ -91,7 +89,8 @@ main {
   min-height: 520px;
 }
 
-.hero-form {
+.login-section,
+.signup-section {
   padding: 36px;
 }
 
@@ -297,8 +296,7 @@ input::placeholder {
 }
 
 @media (max-width: 980px) {
-  .hero-card,
-  .signup-card {
+  .hero-card {
     grid-template-columns: 1fr;
   }
 
@@ -327,9 +325,27 @@ input::placeholder {
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-    font-size: 14px;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+/* Animações JavaScript */
+.collection-card,
+.product-card,
+.signup-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.collection-card.animate,
+.product-card.animate,
+.signup-card.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
