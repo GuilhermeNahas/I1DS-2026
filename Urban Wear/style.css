@@ -50,14 +50,13 @@ main {
 
 .hero-card {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 32px;
   align-items: center;
 }
 
 .hero-visual,
-.login-section,
-.signup-section {
+.login-section {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
@@ -89,8 +88,7 @@ main {
   min-height: 520px;
 }
 
-.login-section,
-.signup-section {
+.login-section {
   padding: 36px;
 }
 
@@ -172,6 +170,28 @@ input::placeholder {
 
 .social-buttons .apple {
   border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.signup-link {
+  margin-top: 18px;
+  text-align: center;
+  color: #c8c8c8;
+}
+
+.signup-link p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.register-link {
+  color: #f7b500;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #ffffff;
 }
 
 .signup-note {
@@ -348,4 +368,216 @@ input::placeholder {
 .signup-card.animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ===================================== */
+/* ESTILOS DO MODAL DE CADASTRO */
+/* ===================================== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: #f7b500;
+}
+
+.modal-header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.modal-header p {
+  margin: 0;
+  color: #d5d5d5;
+  font-size: 0.95rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-group {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-row .form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group select option {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.form-group input::placeholder {
+  color: #a8a8a8;
+}
+
+.form-group small {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.register-btn {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  background: #f7b500;
+  color: #000000;
+  font-weight: 700;
+}
+
+.register-btn:hover {
+  background: #ffce00;
+}
+
+.modal-footer {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-footer p {
+  margin: 0;
+  color: #c8c8c8;
+  font-size: 0.9rem;
+}
+
+.login-link {
+  color: #f7b500;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.login-link:hover {
+  color: #ffce00;
+}
+
+.form-footer {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #c8c8c8;
+}
+
+.form-footer a {
+  color: #f7b500;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.form-footer a:hover {
+  color: #ffce00;
+}
+
+@media (max-width: 640px) {
+  .modal-content {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-close {
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+  }
 }
