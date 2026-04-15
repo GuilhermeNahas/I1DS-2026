@@ -131,6 +131,7 @@ async function logout(e) {
   document.querySelector(".hero").style.display = "block";
   document.querySelector(".collections").style.display = "none";
   document.querySelector(".catalog").style.display = "none";
+  document.querySelector(".catalog").classList.remove("expanded");
   // Resetar navegação
   document.querySelector(".main-nav").innerHTML = `
     <a href="#home">Início</a>
