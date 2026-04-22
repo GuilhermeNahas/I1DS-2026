@@ -1,0 +1,14 @@
+/* RESET DA PAGINA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100dvh; /*APENAS O VH APLICA O TAMANHO PARA PC. JÁ O DVH PARA CELULAR E PC*/
+    width: 100%;
+    background-color: bisque;
+}    
