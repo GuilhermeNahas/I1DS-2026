@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #2c2c2c;
+}
+/*LAYOUT DA PAGINA*/
+.container {
+  display: flex;
+}
+.sidebar {
+  width: 220px;
+  height: 100dvh;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #2563eb;
+} /*HOVER- EFEITO DE ANIMAÇÂO*/
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  width: 100%;
+}
+
+.topbar {
+  /*HEADER*/
+  background-color: #010101;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/*CARDS*/
+.card {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+.card h2 {
+  color: #e74c3c; /* Um tom de vermelho/coral */
+  margin-bottom: 15px;
+}
+
+
+/*formulario*/
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/*botão*/
+button {
+  background-color: #313131;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-top: 8px;
+}
+button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.02);
+}
+
+/*LISTA*/
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  background-color: #f1f5f9;
+  margin-top: 8px;
+  border-radius: 6px;
+  transition: 0.5s;
+  background-color: #d9d9d9;
+}
+
+li:hover {
+  background-color: #000000;
+  transform: translateX(5px);
+}
