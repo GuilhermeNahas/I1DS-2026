@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dinâmico</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+    <h1>HTML Dinâmico com JavaScript</h1>
+
+    <button id="btn" onclick="olaMundo()">Clique aqui</button> <!-- ()-> mostra que é uma função-->
+
+    <p id="texto">Esse texto vai ser alterado!!!</p>
+    <button onclick="mudarTexto()">Mudar Texto</button>
+
+    <h3>Formulário de contato</h3>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome">
+
+        <button onclick="enviarNome()">Enviar</button>
+    </form>
+
+   
+    <form>
+        <label>Primeiro Numero</label>
+        <input type="number" id="n1" name="n1">
+
+        <label>Segundo Numero</label>
+        <input type="number" id="n2" name="n2">
+
+        <button onclick="somar()">Somar</button>
+
+        <p id="resultado"></p>
+    </form>
+
+
+    <script src="js/scripts.js"></script> <!--SCRIPT -> Vai sempre no final do body -->
+</body>
+
+</html>
