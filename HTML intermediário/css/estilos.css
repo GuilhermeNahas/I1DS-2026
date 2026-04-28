@@ -6,9 +6,67 @@
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100dvh; /*APENAS O VH APLICA O TAMANHO PARA PC. JÁ O DVH PARA CELULAR E PC*/
-    width: 100%;
-    background-color: bisque;
-}    
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100dvh; /*APENAS O VH APLICA O TAMANHO PARA PC. JÁ O DVH PARA CELULAR E PC*/
+  width: 100%;
+}
+
+header {
+  background-color: #1e90ff;
+  color: white;
+  padding: 24px;
+  text-align: center;
+  font-size: 24px;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* GAP -> Utilizado para separar*/
+  padding: 12px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  /*HOVER -> Para deixar a passagem do mouse animada, como foi feito no nav a */
+  color: #1e90ff;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/*Layout principal*/
+main {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+/*Area lateral*/
+aside {
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  padding: 16px;
+  border-radius: 8px;
+}
+/*Conteudo*/
+section{
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+/*Rodapé*/
+footer{
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
