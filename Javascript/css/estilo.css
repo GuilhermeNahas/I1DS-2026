@@ -1,68 +1,124 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 12px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* MODELO PADRÃO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  background-color: #f4f6f9;
-  text-align: center;
-  padding: 24px;
+body{
+    background-color: #f4f6f9;
+    text-align: center;
+    padding: 24px;
 }
 
-h1 {
-  color: #111827;
+h1, h2, h3, p{
+    color: #111827;
+    padding: 8px;
+    text-align: center;
+    /* margin: 10px 0; */
 }
 
-.card {
-  background-color: rgb(10, 10, 10);
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+button {
+  /* background-color: #2563eb; */
   color: white;
-}
-
-/*Exercicio 01*/
-#ex01 {
-  background-color: #ccc;
-  width: 500px;
-  padding: 20px;
-  margin: 24px auto;
-  border-radius: 10px;
-}
-
-#contador {
-  font-size: 56px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.grupo-botoes {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-#button {
-  width: 80px;
-
-  color: white;
+  padding: 10px;
+  width: 150px;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
   border: none;
-  font-size: 24px;
+  margin-top: 10px;
 }
 
-#menos{
-background-color: red;
+button:hover {
+  /* background-color: #1d4ed8; */
+  transform: scale(1.02);
 }
-#mais{
+#btn-mais{
     background-color: green;
+    width: 150px;
 }
-#zerar{
-background-color: rgb(28, 25, 223);
-font-size: 16px;
+#btn-somar{
+    background-color: green;
+    width: 100px;
+}
+#btn-subtrair{
+    background-color: red;
+    width: 100px;
+}
+#btn-dividir{
+    background-color: orange;
+    width: 100px;
+}
+#btn-multiplicar{
+    background-color: blue;
+    width: 100px;
+}
+
+#btn-menos{
+    background-color: red;
+}
+#btn-zerar{
+    background-color: blue;
+}
+
+/* Inputs text e number com mesmo visual */
+input[type="text"],
+input[type="number"] {
+    width: 80%;
+    padding: 10px 12px;
+    margin-top: 8px;
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.exercicio{
+    background-color: #ccc;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centraliza conteúdo */
+    justify-content: center;
+}
+
+#contador{
+    font-size: 40px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color02 {
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+#colorpreview{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
 }

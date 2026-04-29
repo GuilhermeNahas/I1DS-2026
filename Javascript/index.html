@@ -4,37 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Script | HTML</title>
+    <title>JavaScript | HTML Dinâmico</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
-    <h1>HTML Dinâmico com Java script</h1>
+
+
+    <h1>HTML Dinâmico com JavaScript</h1>
     <div class="card">
-        <h2>Exercicio 01</h2>
+        <h2>Exercício 01</h2>
         <h3>Contador Simples</h3>
-        <p>
-            <span>Objetivo:</span>
-            Criar um contador com botão +1 botão -1 e Reset
-        </p>
+        <p><span>Objetivo:</span> Criar um contador com botão +1, um botão -1 e um botão de Reset</p>
+
+        <div class="exercicio">
+            <h3>Contador</h3>
+            <p id="contador">0</p>
+            <div class="grupo-botoes">
+                <form>
+                    <button onclick="ex01menos()" id="btn-menos">-</button>
+                    <button onclick="ex01zerar()" id="btn-zerar">Zerar</button>
+                    <button onclick="ex01mais()" id="btn-mais">+</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div id="ex01">
-        <h3>Contador</h3>
-        <p id="contador">0</p>
-        <div class="grupo-botoes">
-            <button id="menos" onclick="diminuir()">-1</button>
-            <button id="zerar" onclick="zerar()">Zerar</button>
-            <button id="mais" onclick="adicionar()">+1</button>
+    <div class="card">
+        <h2>Exercício 02</h2>
+        <h3>Seletor de Cores</h3>
+        <p>Objetivo: Criar um seletor de cores, onde pode alterar a cor, e ela é exibida.</p>
+        <div class="exercicio">
+            <h3>Seletor de Cor</h3>
+            <p id="colorExib">Cor atual: #00000</p>
+            <form action="get">
+                <input oninput="atualizarSeletor(event)" type="color" placeholder="Selecione uma cor..." name="color02"
+                    id="color02">
+            </form>
+            <div id="colorpreview">
+                <h1> </h1>
+            </div>
         </div>
     </div>
 
+    <div class="card">
+        <h2>Exercício 03</h2>
+        <h3>Calculadora Simples</h3>
+        <p><span>Objetivo:</span> Criar uma simples calculadora, capaz de resolver contas.</p>
+        <div class="exercicio">
+            <form action="get">
+                <label for="num1">Primeiro Número:</label>
+                <input type="number" name="num1" id="num1">
 
+                <br>
+                <label for="num2">Segundo Número:</label>
+                <input type="number" name="num2" id="num2">
+
+                <br>
+
+                <h2 id="resultado">Resultado:</h2>
+                <br>
+            </form>
+
+            <div class="grupo-botoes">
+                <button id="btn-subtrair" onclick="subtrair()">Subtrair</button>
+                <button id="btn-dividir" onclick="dividir()">Dividir</button>
+                <button id="btn-multiplicar" onclick="multiplicar()">Multiplicar</button>
+                <button id="btn-somar" onclick="somar()">Somar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
-
 </body>
+
 </html>
-
-
-
-
